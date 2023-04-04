@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript">
+        
+        function valiadteform(){
+            var name=document.getElementById("YourName").value;
+            if(name==null || name==" "){
+                alert("Name cant be null");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>My details</h1>
+    <form name="myform" action="mailto:ektakaushik0731@gmail.com" method="post" onsubmit="valiadteform()" enctype="text/plain">
+    <label>Name:</label>
+    <input type="text" name="YourName" id="YourName" value="">
+    <br>
+    <label>Email:</label>
+    <input type="email" name="Your Email" value="">
+    <br>
+    <label>Password</label>
+    <input type="Password" name="ypassword" id="ypassword">
+    <br>
+    <label>dateofbirth</label>
+    <input type="date" name="ydate" id="ydate">
+    <br>
+    <input type="radio" name="one" id="" value="male">
+    <input type="radio" name="one" id="" value="female">
+    <input type="radio" name="one" id="" value="other">
+    <br>
+    <input type="select" name="abc" id="">
+    <option value="car1"></option>
+    <option value="car1"></option><option value="car1"></option>
+    <label>Your Message</label>
+    <textarea name="Your Message" id="" cols="20" rows="10"></textarea>
+    <br><input type="submit" name="yregister" value="submit">
+</form>
+</body>
+</html>
